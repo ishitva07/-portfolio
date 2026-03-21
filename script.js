@@ -66,3 +66,28 @@ document.querySelector(".layer4").style.transform =
 "translateY(" + scroll * 0.2 + "px)";
 
 });
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+const hiddenElements = document.querySelectorAll(".section,.card,.about-box");
+
+hiddenElements.forEach(el=>{
+el.classList.add("hidden");
+observer.observe(el);
+});
+window.onscroll = function(){
+
+let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+let scrolled = (winScroll / height) * 100;
+
+document.querySelector(".scroll-bar").style.width = scrolled + "%";
+
+};
