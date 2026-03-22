@@ -374,7 +374,7 @@ body {
     radial-gradient(circle at 30% 40%, rgba(0, 212, 255, 0.25), transparent 40%),
     radial-gradient(circle at 70% 60%, rgba(90, 103, 216, 0.25), transparent 40%),
     radial-gradient(circle at 50% 50%, rgba(255, 0, 150, 0.15), transparent 50%)
-     linear-gradient(135deg, #0f0c29, #302b63, #24243e, #1a1a2e);
+     linear-gradient(135deg, #0f2027, #203a43, #2c5364, #ff0080);
 }
   animation: swirl 25s linear infinite;
 }
