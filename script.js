@@ -1,93 +1,26 @@
-// SCROLL REVEAL ANIMATION
-
-const observer = new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-});
-});
-
-const hiddenElements = document.querySelectorAll(".section,.card,.about-box");
-
-hiddenElements.forEach(el=>{
-el.classList.add("hidden");
-observer.observe(el);
-});
-
-
 // TYPING EFFECT
-
-window.onload = function(){
-
 const text = "Ishitva Rathore";
 let i = 0;
 
-function typingEffect(){
-
-if(i < text.length){
-
-document.getElementById("typing").innerHTML += text.charAt(i);
-
-i++;
-
-setTimeout(typingEffect,80);
-
+function typing(){
+  if(i < text.length){
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 80);
+  }
 }
+typing();
 
-}
+// SCROLL ANIMATION
+const sections = document.querySelectorAll(".section");
 
-typingEffect();
+window.addEventListener("scroll", () => {
+  sections.forEach(sec => {
+    const top = window.scrollY;
+    const offset = sec.offsetTop - 400;
 
-};
-
-
-// SCROLL PROGRESS BAR
-
-window.onscroll = function(){
-
-let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-
-let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-let scrolled = (winScroll / height) * 100;
-
-document.querySelector(".scroll-bar").style.width = scrolled + "%";
-
-};
-window.addEventListener("scroll", function(){
-
-let scroll = window.scrollY;
-
-document.querySelector(".layer2").style.transform =
-"translateY(" + scroll * 0.1 + "px)";
-
-document.querySelector(".layer4").style.transform =
-"translateY(" + scroll * 0.2 + "px)";
-
+    if(top > offset){
+      sec.classList.add("show");
+    }
+  });
 });
-const observer = new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.classList.add("show");
-}
-});
-});
-
-const hiddenElements = document.querySelectorAll(".section,.card,.about-box");
-
-hiddenElements.forEach(el=>{
-el.classList.add("hidden");
-observer.observe(el);
-});
-window.onscroll = function(){
-
-let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-
-let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-let scrolled = (winScroll / height) * 100;
-
-document.querySelector(".scroll-bar").style.width = scrolled + "%";
-
-};
