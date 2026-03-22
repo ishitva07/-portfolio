@@ -3,126 +3,125 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ishitva Rathore</title>
+<title>Ishitva Rathore | Portfolio</title>
 
+<!-- CSS FILE -->
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 
 <body>
 
-<!-- NAV -->
+<!-- NAVBAR -->
 <nav class="navbar">
-  <h1 class="logo">Ishitva</h1>
-  <div class="menu">
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
+  <div class="nav-container">
+    <div class="logo">Ishitva Rathore</div>
+    <ul class="nav-menu">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-left">
-    <h1><span id="typing"></span></h1>
-    <p class="tagline">Aspiring Entrepreneur building digital businesses 🚀</p>
-
-    <div class="buttons">
-      <a href="#contact" class="btn">Contact</a>
-      <a href="#about" class="btn outline">About Me</a>
+  <div class="hero-content">
+    <h1 class="hero-title" id="heroTitle">Ishitva Rathore</h1>
+    <p class="hero-subtitle">
+      BBA in Digital Business & Entrepreneurship<br>
+      IIM Bangalore • Finance & Accounting • Business Strategy
+    </p>
+    <a href="#contact" class="cta-button">
+      <i class="fas fa-arrow-down"></i>
+      View Contact
+    </a>
+  </div>
+  
+  <div class="quick-nav">
+    <div class="quick-nav-grid">
+      <a href="#about" class="nav-card"><i class="fas fa-user nav-icon"></i><span>About</span></a>
+      <a href="#education" class="nav-card"><i class="fas fa-graduation-cap nav-icon"></i><span>Education</span></a>
+      <a href="#experience" class="nav-card"><i class="fas fa-briefcase nav-icon"></i><span>Experience</span></a>
+      <a href="#skills" class="nav-card"><i class="fas fa-chart-line nav-icon"></i><span>Skills</span></a>
     </div>
   </div>
 </section>
 
 <!-- ABOUT -->
 <section class="section" id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a BBA student at IIM Bangalore, focused on Digital Business & Entrepreneurship.
-    I am developing skills in finance, strategy, and business building.
-    <br><br>
-    I aim to create impactful businesses that solve real-world problems.
-  </p>
+  <h2 class="section-title">About Me</h2>
+  <div class="about-container">
+    <p class="about-text">
+      I am a BBA student in Digital Business & Entrepreneurship at IIM Bangalore.<br><br>
+      I am interested in <strong style="color: #00d4ff;">finance, business strategy, and building digital businesses</strong>.<br><br>
+      I enjoy working on ideas that solve real-world problems and create value.<br><br>
+      I come from a science background, which helps me think logically and make better decisions.<br><br>
+      I aim to grow as an entrepreneur and build impactful businesses in the future.
+    </p>
+  </div>
 </section>
 
 <!-- EDUCATION -->
 <section class="section" id="education">
-  <h2>Education</h2>
-  <div class="grid">
+  <h2 class="section-title">Education</h2>
+  <div class="cards-grid">
     <div class="card">
-      <b>IIM Bangalore</b><br>
-      BBA DBE (2025–2028)
+      <div class="card-title">IIM Bangalore</div>
+      <div class="card-text">
+        BBA in Digital Business & Entrepreneurship<br>
+        <strong>2025 – 2028</strong>
+      </div>
     </div>
     <div class="card">
-      <b>Class 12</b><br>
-      90% (Science)
+      <div class="card-title">Class 12 (Science)</div>
+      <div class="card-text"><strong>90% Aggregate</strong></div>
     </div>
   </div>
 </section>
 
 <!-- EXPERIENCE -->
 <section class="section" id="experience">
-  <h2>Experience</h2>
-
-  <div class="grid">
-
+  <h2 class="section-title">Experience</h2>
+  <div class="cards-grid">
     <div class="card">
-      <b>Event Management</b><br><br>
-      Coordinated school events with smooth execution and planning.
+      <div class="card-title">Event Management</div>
+      <div class="card-text">Organized school events and coordinated teams.</div>
     </div>
-
     <div class="card">
-      <b>House Prefect</b><br><br>
-      Managed 100+ students and maintained discipline.
+      <div class="card-title">House Prefect</div>
+      <div class="card-text">Managed 100+ students and led championship win.</div>
     </div>
-
-    <div class="card">
-      <b>Organizing Head</b><br><br>
-      Led planning of major school functions and activities.
-    </div>
-
-    <div class="card">
-      <b>Leadership</b><br><br>
-      Built teamwork, communication, and problem-solving skills.
-    </div>
-
   </div>
 </section>
 
 <!-- SKILLS -->
 <section class="section" id="skills">
-  <h2>Skills</h2>
-  <div class="grid">
-
-    <div class="card">
-      Finance
-      <div class="bar"><div style="width:80%"></div></div>
-    </div>
-
-    <div class="card">
-      Strategy
-      <div class="bar"><div style="width:70%"></div></div>
-    </div>
-
-    <div class="card">
-      Leadership
-      <div class="bar"><div style="width:85%"></div></div>
-    </div>
-
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="card">Finance</div>
+    <div class="card">Accounting</div>
+    <div class="card">Strategy</div>
+    <div class="card">Leadership</div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section" id="contact">
-  <h2>Contact</h2>
-  <div class="grid">
-    <div class="card">Email: ishitva.rathore25@iimb.ac.in</div>
-    <div class="card">LinkedIn: linkedin.com/in/ishitva-rathore</div>
-  </div>
+  <h2 class="section-title">Contact</h2>
+  <p>Email: ishitva.rathore25@iimb.ac.in</p>
 </section>
 
+<!-- JS FILE -->
 <script src="script.js"></script>
+
 </body>
 </html>
