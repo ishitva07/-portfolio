@@ -11,7 +11,14 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: transparent;
+
+  background: linear-gradient(
+    135deg,
+    rgba(10, 10, 26, 0.9),
+    rgba(26, 26, 64, 0.9),
+    rgba(44, 0, 62, 0.9)
+  );
+
   color: #e2e8f0;
   overflow-x: hidden;
 }
