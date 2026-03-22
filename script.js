@@ -1,7 +1,11 @@
 /* Typing Animation */
 const text = "Ishitva Rathore";
 const heroTitle = document.getElementById('heroTitle');
+
 let i = 0;
+
+// ✅ CLEAR TEXT FIRST
+heroTitle.textContent = "";
 
 function typeWriter() {
   if (i < text.length) {
@@ -14,7 +18,6 @@ function typeWriter() {
 window.addEventListener('load', () => {
   setTimeout(typeWriter, 500);
 });
-
 /* Navbar Scroll Effect */
 window.addEventListener('scroll', () => {
   const navbar = document.querySelector('.navbar');
