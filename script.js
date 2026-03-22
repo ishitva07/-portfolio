@@ -1,5 +1,5 @@
 /* Typing Animation */
-const text = "Aspiring Entrepreneur";
+const text = "Ishitva Rathore";
 const heroTitle = document.getElementById('heroTitle');
 let i = 0;
 
