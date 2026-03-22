@@ -432,3 +432,48 @@ body {
     transform: translateZ(200px) translateY(-1000px);
   }
 }
+/* 📱 MOBILE FIX */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .nav-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Hero section */
+  .hero {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  /* Sections */
+  section {
+    padding: 40px 20px;
+  }
+
+  /* Cards / content */
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Skills / boxes */
+  .skills, .projects {
+    grid-template-columns: 1fr;
+  }
+
+}
